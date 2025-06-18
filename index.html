@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>MenteXP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MenteXP</h1>
+        <p class="slogan">¡Diversión y aprendizaje, la combinación perfecta!</p>
+        <p class="credits">Créditos: Deymon Milla ; Daniel Domínguez ; Luis Rodríguez</p>
+    </header>
+
+    <main id="main-content">
+        <section id="start-screen">
+            <h2>Ingresa tu nombre para jugar:</h2>
+            <input type="text" id="player-name" placeholder="Tu nombre">
+            <button id="start-btn">Comenzar Partida</button>
+        </section>
+
+        <section id="quiz-screen" class="hidden">
+            <h2 id="question-text"></h2>
+            <div id="options"></div>
+            <button id="next-btn">Siguiente Pregunta</button>
+        </section>
+
+        <section id="result-screen" class="hidden">
+            <h2>Resultados</h2>
+            <p id="score-text"></p>
+            <p id="time-text"></p>
+            <button id="restart-btn">Iniciar Otra Ronda</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
